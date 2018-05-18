@@ -8,7 +8,7 @@
 #include <ctype.h>
 
 
-char validarnombre(char input[])
+char validarnombre(char *input)
 {
 
     char aux[50];
@@ -22,11 +22,11 @@ char validarnombre(char input[])
     return input[50];
 }
 
-int soloNombre(char str[])
+int soloNombre(char *str)
 {
     int i;
     for(i=0; i!= '\0'; i++){
-        if((str[i] != ' ') && (str[i] < 'a' || str[i] > 'z') && (str[i] < 'A' || str[i] > 'Z')){
+        if((*(str+i) != ' ') && (*(str+i) < 'a' || *(str+i) > 'z') && (*(str+i) < 'A' || *(str+i) > 'Z')){
          return 0;
 
     }
@@ -34,7 +34,7 @@ int soloNombre(char str[])
     return 1;
 }
 
-int validarNumero(int numero1)
+int validarNumero(int *numero1)
 {
 int a;
 int b;

@@ -5,17 +5,17 @@
  * \param recibe un string
  * \return devuelve un string validado
  */
-char validarnombre(char[]);
+char validarnombre(char );
 
 /** \brief compara una variable con caracteres propios de un string para validar
  * \param recibe el string ingresado en "validarnombre"
  * \return una variable tipo flag para indicar si es o no un string
  */
-int soloNombre(char[]);
+int soloNombre(char *);
 
 /** \brief  valida un numero
  * \param  recibe un numero
  * \return devuelve el numero validado
  */
-int validarNumero(int);
+int validarNumero(int );
 #endif

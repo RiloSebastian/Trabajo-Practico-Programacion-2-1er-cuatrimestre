@@ -9,7 +9,7 @@
 
 int main(){
 
-ePersona persona[TAM];
+ePersona *persona[TAM];
 int opcion;
 int index;
 char respuesta[2];

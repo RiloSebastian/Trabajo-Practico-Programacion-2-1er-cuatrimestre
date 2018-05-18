@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "funciones.h"
+#include "validaciones.h"
 #define TAM 20
 #define OCUPADO 1
 #define LIBRE 0
@@ -43,13 +44,13 @@ indice=buscarLibre(persona,20);
 if(indice!=-1){
 
     printf("\n Ingrese un nombre:\n");
-    persona[indice].nombre[50]=validarnombre(persona[indice].nombre);
+    (persona+indice)->nombre[50]=validarnombre((persona+indice)->nombre);
     printf(" Ingrese edad:\n");
-    persona[indice].edad=validarNumero(persona[indice].edad);
+    (persona+indice)->edad= validarNumero((persona+indice)->edad);
     printf(" Ingrese un Dni:\n");
-    persona[indice].dni=validarNumero(persona[indice].dni);
+    (persona+indice)->dni=validarNumero((persona+indice)->dni);
 
-    persona[indice].estado= OCUPADO;
+    (persona+indice)->estado= OCUPADO;
 
     index=0;
 }
