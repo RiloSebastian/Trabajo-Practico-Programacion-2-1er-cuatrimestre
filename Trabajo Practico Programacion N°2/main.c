@@ -9,12 +9,12 @@
 
 int main(){
 
-ePersona persona[20];
+ePersona persona[TAM];
 int opcion;
 int index;
 char respuesta[2];
 
-inicializar(persona, 20);
+inicializar(&persona, TAM);
 /* inicializa todos los estados en 0 */
 
 do{
@@ -26,7 +26,7 @@ opcion=validarNumero(opcion);
 switch(opcion){
 
 case 1:
-    index=altaPersona(persona,20);
+    index=altaPersona(&persona,TAM);
     if(index==0){
         printf("Persona Agregada\n");
     }
@@ -35,7 +35,7 @@ case 1:
     }
     break;
 case 2:
-    index=bajaPersona(persona,20);
+    index=bajaPersona(&persona,TAM);
     if(index==0){
         printf("Persona dada de baja\n");
     }
@@ -44,10 +44,10 @@ case 2:
     }
     break;
 case 3:
-    mostrarListaPorNombre(persona,20);
+    mostrarListaPorNombre(&persona,TAM);
     break;
 case 4:
-    mostrarGrafico(persona,20);
+    mostrarGrafico(&persona,TAM);
     break;
 default :
     printf("\n Error: ingrese alguna de las opciones dadas con anterioridad.\n");

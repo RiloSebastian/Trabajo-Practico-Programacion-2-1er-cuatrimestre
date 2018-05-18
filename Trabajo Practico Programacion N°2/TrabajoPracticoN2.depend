@@ -69,3 +69,27 @@
 	"validaciones.h"
 	<ctype.h>
 
+1526649818 source:d:\##clonegit\nueva carpeta\trabajo-practico-programacion-2-1er-cuatrimestre\trabajo practico programacion n°2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+	"validaciones.h"
+
+1526650202 d:\##clonegit\nueva carpeta\trabajo-practico-programacion-2-1er-cuatrimestre\trabajo practico programacion n°2\funciones.h
+
+1526649408 d:\##clonegit\nueva carpeta\trabajo-practico-programacion-2-1er-cuatrimestre\trabajo practico programacion n°2\validaciones.h
+
+1526649408 source:d:\##clonegit\nueva carpeta\trabajo-practico-programacion-2-1er-cuatrimestre\trabajo practico programacion n°2\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"validaciones.h"
+	<ctype.h>
+
+1526650202 source:d:\##clonegit\nueva carpeta\trabajo-practico-programacion-2-1er-cuatrimestre\trabajo practico programacion n°2\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
